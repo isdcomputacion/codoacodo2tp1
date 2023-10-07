@@ -8,42 +8,53 @@ body {
     font-family: 'open sans';
 }
 
-.float-logo{
-position: fixed;
-bottom: 20px;
-right: 20px;
-width: 100px;
-z-index: 1000;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.float-logo {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 100px;
+    z-index: 1000;
+}
+
+.float-logo:hover{
+    transform: scale(1.5);
 }
 
 /* menu */
 .menu {
-    display: flex;
     position: fixed;
     top: 20px;
-    right: 5vh;
+    z-index: 1000;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
     width: 90%;
     min-height: 100px;
     height: fit-content;
-    z-index: 1000;
     background-color: rgba(13, 13, 13, 0.3);
 }
 
 .menu-left {
-    text-align: center;
-    width: 30%;
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    min-height: 100px;
 }
 
 .menu-right {
+    display: flex;
+    justify-content: center;
     width: 70%;
-    margin: 10px;
-    text-align: right;
+    min-height: 100px;
 }
 
-.menu-right a{
-    padding: 5px;
-}
 
 
 .contenedor {
@@ -263,7 +274,8 @@ main .sobre-nosotros {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
+
     display: flex;
 }
 
@@ -291,7 +303,7 @@ main .sobre-nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 50%;
     margin: 20px;
 }
@@ -303,8 +315,7 @@ main .sobre-nosotros {
 
 .contactForm {
     background-color: rgb(73, 87, 177, 0.3);
-    width: 80%;
-
+    width: 90%;
     padding: 20px;
     text-align: center;
     font-size: large;
@@ -347,16 +358,19 @@ footer {
     border-bottom: 3px solid #af20d3;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 .content-foo p {
     color: #f8f8f8;
+    font-size: 1.5rem;
 }
 
 .titulo-final {
     text-align: center;
-    font-size: 24px;
+    font-size: 2rem;
     margin: 20px 0 0 0;
+    padding: 20px;
     color: #c6ec76;
 }
 
@@ -423,118 +437,42 @@ footer {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px){
 
-    /*menu*/
-    .menu {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        align-items: center;
-        justify-content: center;
-        top: 20px;
-        right: 5vh;
-        width: 90%;
-        min-height: 100px;
-        height: fit-content;
-        z-index: 1000;
-        background-color: rgba(13, 13, 13, 0.3);
-    }
 
-    .menu-left {
-        text-align: center;
-        margin: 5px;
-    }
+    /* menu */
+.menu {
+    position: fixed;
+    top: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 100px;
+    height: fit-content;
+    background-color: rgba(13, 13, 13, 0.3);
+}
 
-    .menu-right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 5px;
-    }
+.menu-left {
 
-    .menu-right a{
-        padding: 5px;
-    }
-    /*menu*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 100px;
+}
 
-    nav {
-        text-align: center;
-        padding: 30px 0 0 0;
-    }
+.menu-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-height: 100px;
+}
 
-    nav>a {
-        margin-right: 5px;
-    }
-
-    .textos-header h1 {
-        font-size: 35px;
-    }
-
-    .textos-header h2 {
-        font-size: 20px;
-    }
-
-    /* Quienes Somos */
-
-    .imagen-about-us {
-        margin-bottom: 60px;
-        width: 99%;
-    }
-
-    .sobre-nosotros .contenido-textos {
-        width: 95%;
-    }
-
-    /* Galeria */
-
-    .imagen-port {
-        width: 95%;
-    }
-
-    /* Clientes */
-
-    .cards .card {
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cards .card img {
-        width: 90px;
-        height: 90px;
-    }
-
-    /* Footer - PARTE INFERIOR DE LA PAGINA*/
-
-    .contenedor-footer {
-        flex-direction: column;
-        border: none;
-    }
-
-    .content-foo {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .content-foo h4 {
-        border: none;
-    }
-
-    .content-foo p {
-        color: #ccc;
-        border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 20px;
-    }
-
-    .titulo-final {
-        font-size: 20px;
-    }
-
-    /*Encontranos*/
 
 .contenedor-contact {
     box-sizing: border-box;
@@ -543,26 +481,31 @@ footer {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    /* height: 80vh; */
+
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 
 .contact-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-    width: 90%;
+    margin: 20px;
+    width: 80%;
     color: white;
 }
 
 .mapa {
+    width: 80%;
     margin-bottom: 20px;
+}
+
+#sendmessage{
+    text-align: center;
 }
 
 .direccion {
@@ -570,34 +513,40 @@ footer {
 }
 
 .contact-right {
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: center;
+    width: 80%;
     margin: 20px;
 }
 
-#sendmessage {
-    color: white;
-    margin-bottom: 50px;
-    width: 90vw;
-    text-align: center;
+
+
+
+
+
+
+
+
+
+
+footer {
+        background: #642a73;
+        padding: 60px 0 30px 0;
+        margin: auto;
+        overflow: visible;
+    }
+    
+    .contenedor-footer {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+    }
 }
 
-.contactForm {
-    background-color: rgb(73, 87, 177, 0.3);
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-    font-size: large;
-
-}
-
-.form-control {
-    margin: 2px;
-    width: 80%;
-    font-size: 1rem;
-}
-
-}
