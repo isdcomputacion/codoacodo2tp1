@@ -16,13 +16,15 @@ width: 100px;
 z-index: 1000;
 }
 
+/* menu */
 .menu {
     display: flex;
     position: fixed;
     top: 20px;
     right: 5vh;
     width: 90%;
-    height: 100px;
+    min-height: 100px;
+    height: fit-content;
     z-index: 1000;
     background-color: rgba(13, 13, 13, 0.3);
 }
@@ -253,6 +255,7 @@ main .sobre-nosotros {
 }
 
 /*Encontranos*/
+
 .contenedor-contact {
     box-sizing: border-box;
     background-image: url('../img/Form.jpg');
@@ -421,6 +424,42 @@ footer {
 }
 
 @media screen and (max-width:500px) {
+
+    /*menu*/
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        top: 20px;
+        right: 5vh;
+        width: 90%;
+        min-height: 100px;
+        height: fit-content;
+        z-index: 1000;
+        background-color: rgba(13, 13, 13, 0.3);
+    }
+
+    .menu-left {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .menu-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .menu-right a{
+        padding: 5px;
+    }
+    /*menu*/
+
     nav {
         text-align: center;
         padding: 30px 0 0 0;
@@ -494,4 +533,71 @@ footer {
     .titulo-final {
         font-size: 20px;
     }
+
+    /*Encontranos*/
+
+.contenedor-contact {
+    box-sizing: border-box;
+    background-image: url('../img/Form.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 90%;
+    color: white;
+}
+
+.mapa {
+    margin-bottom: 20px;
+}
+
+.direccion {
+    text-align: left;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px;
+}
+
+#sendmessage {
+    color: white;
+    margin-bottom: 50px;
+    width: 90vw;
+    text-align: center;
+}
+
+.contactForm {
+    background-color: rgb(73, 87, 177, 0.3);
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+
+}
+
+.form-control {
+    margin: 2px;
+    width: 80%;
+    font-size: 1rem;
+}
+
 }
