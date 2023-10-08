@@ -428,13 +428,16 @@ footer {
 }
 
 .btn-wsp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     width: 60px;
     height: 60px;
     line-height: 63px;
     bottom: 25px;
     right: 25px;
-    background: #20ba5a;
+    background: #79e8a4;
     color: #FFF;
     border-radius: 50px;
     text-align: center;
@@ -444,8 +447,15 @@ footer {
     transition: all 300ms ease;
 }
 
+.btn-wsp img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+
 .btn-wsp:hover {
-    background: #20ba5a;
+    background: #29f677;
 }
 
 @media only screen and (min-width:320px) and (max-width:768px) {
