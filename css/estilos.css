@@ -22,7 +22,7 @@ header {
     z-index: 1000;
 }
 
-.float-logo:hover{
+.float-logo:hover {
     transform: scale(1.5);
 }
 
@@ -374,6 +374,24 @@ footer {
     color: #c6ec76;
 }
 
+
+.flecha {
+    width: 100%;
+    height: fit-content;
+    text-align: right;
+}
+
+.imagenflecha {
+    width: 25px;
+    height: auto;
+    background-color: white;
+    border-radius: 40px;
+}
+
+
+
+
+
 @media screen and (max-width:900px) {
     header {
         background-position: center;
@@ -437,92 +455,90 @@ footer {
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
 
 
     /* menu */
-.menu {
-    position: fixed;
-    top: 20px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    min-height: 100px;
-    height: fit-content;
-    background-color: rgba(13, 13, 13, 0.3);
-}
+    .menu {
+        position: fixed;
+        top: 20px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        min-height: 100px;
+        height: fit-content;
+        background-color: rgba(13, 13, 13, 0.3);
+    }
 
-.menu-left {
+    .menu-left {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    min-height: 100px;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        min-height: 100px;
+    }
 
-.menu-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    min-height: 100px;
-}
-
-
-.contenedor-contact {
-    box-sizing: border-box;
-    background-image: url('../img/Form.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    /* height: 80vh; */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    width: 80%;
-    color: white;
-}
-
-.mapa {
-    width: 80%;
-    margin-bottom: 20px;
-}
-
-#sendmessage{
-    text-align: center;
-}
-
-.direccion {
-    text-align: left;
-}
-
-.contact-right {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: 20px;
-}
+    .menu-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        min-height: 100px;
+    }
 
 
+    .contenedor-contact {
+        box-sizing: border-box;
+        background-image: url('../img/Form.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        /* height: 80vh; */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        width: 80%;
+        color: white;
+    }
+
+    .mapa {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #sendmessage {
+        text-align: center;
+    }
+
+    .direccion {
+        text-align: left;
+    }
+
+    .contact-right {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 20px;
+    }
 
 
 
@@ -532,13 +548,15 @@ footer {
 
 
 
-footer {
+
+
+    footer {
         background: #642a73;
         padding: 60px 0 30px 0;
         margin: auto;
         overflow: visible;
     }
-    
+
     .contenedor-footer {
         display: flex;
         width: 90%;
@@ -549,4 +567,3 @@ footer {
         border-bottom: 1px solid #ccc;
     }
 }
-
